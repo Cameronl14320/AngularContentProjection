@@ -1,0 +1,9 @@
+<div>
+  This is conditional content projection
+  <div class="button" (click)="toggleState()">
+    Toggle
+  </div>
+  <div *ngIf="enabled">
+    <ng-container [ngTemplateOutlet]="childrenContent.templateRef"></ng-container>
+  </div>
+</div>
